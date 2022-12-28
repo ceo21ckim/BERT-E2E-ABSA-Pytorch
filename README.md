@@ -4,6 +4,22 @@
 
 BERT-E2E-ABSA 모델을 따라 작성하였습니다. [Origin Paper](https://arxiv.org/pdf/1910.00883.pdf)는 2019년 발표된 논문으로 ABSA 연구에 BERT를 이용하여 End-to-End 방식으로 ABSA를 수행하였습니다. 한글로 코드를 뜯어보며 어떻게 작동되는지 알아보고자 합니다.
 
+`Dockerfile`: Docker를 사용하시는 분들은 `Dockerfile`을 호출해 동일한 환경에서 사용이 가능합니다. cuda 버전을 확인하세요.
+
+`absa_bert`: BERT-E2E-ABSA 기법 중 Attention Network 기법이 가장 우수한 성능을 발휘하고 있기 때문에, SAN을 기반으로 구축한 모델입니다. 
+
+`parser`: 학습에 필요한 파라미터들을 설정값을 담고 있습니다.
+
+`run.py`: SemEval 데이터의 성능을 testing하는 코드입니다. 
+
+`train.py`: BERT-E2E-ABSA 모델을 학습하는 코드입니다.
+
+`settings.py`: 실험에 필요한 경로들을 설정하였습니다. 
+
+`run.ipynb`: SemEval 데이터로 학습한 후 Yelp.com 데이터를 이용해 inference하는 코드입니다. 
+
+`utils.py`: 실험에 필요한 함수들을 저장해두었습니다. 
+
 
 # SemEval
 
