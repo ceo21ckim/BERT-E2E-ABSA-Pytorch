@@ -20,26 +20,26 @@ BERT-E2E-ABSA 모델을 따라 작성하였습니다. [Origin Paper](https://arx
 
 # Docker
 
-1.clone this repository
+**1.clone this repository**
 
 ```
 git clone https://github.com/ceo21ckim/Aspect-Based-Sentiment-Analysis.git
 cd Aspect-Based-Sentiment-Analysis
 ```
 
-2.build Dockerfile
+**2.build Dockerfile**
 
 ```
 docker build --tag [filename]
 ```
 
-3.execute
+**3.execute**
 
 ```
 docker run -itd --gpus all --name [NAME] -p 8888:8888 -v [PATH]:/workspace [filename] /bin/bash
 ```
 
-4.use jupyter notebook
+**4.use jupyter notebook**
 
 ```
 docker exec -it [NAME] bash 
