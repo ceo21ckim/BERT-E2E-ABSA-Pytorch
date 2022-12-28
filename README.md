@@ -23,7 +23,7 @@ BERT-E2E-ABSA 모델을 따라 작성하였습니다. [Origin Paper](https://arx
 
 # SemEval
 
-`SemEval` 데이터는 ABSA 연구에서 주로 사용되는 데이터셋이며, Restaurant, Laptop에 관련된 리뷰
+`SemEval` 데이터는 ABSA 연구에서 주로 사용되는 데이터셋이며, Restaurant, Laptop에 관련된 리뷰로 구성되어 있으나, Restaurant 관련 리뷰만 사용하였습니다. 추가로 활용된 `Yelp.com` 데이터는 2018년도 데이터이며 샘플로 5만개를 추출하여 사용하였습니다. 
 
 
 | **Dataset** | **Train** | **Valid** | **Test** |
