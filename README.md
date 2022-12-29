@@ -66,6 +66,8 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
 # Execute
 
 ```
-python absa_train.py
-
+python absa_train.py --semeval_dir SemEval --absa_type san --model_type bert \
+                     --fix_tfm 0 --num_epochs 10 --save_steps 100 --seed 42 \
+                     --epsilon 1e-8 --warmup_steps 0 --model_name_or_path bert-base-uncased \
+                     --max_grad_norm 1.0 --learning_rate 1e-5 --device cuda
 ```
