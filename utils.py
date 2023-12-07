@@ -317,7 +317,7 @@ def ot2bieos_ts_batch(ts_tag_seqs):
 def tag2ts(ts_tag_sequence):
     n_tags = len(ts_tag_sequence)
     ts_sequence, sentiments = [], []
-    begin, end = -1, -1
+    beg, end = -1, -1
     
     for i in range(n_tags):
         ts_tag = ts_tag_sequence[i]
@@ -343,10 +343,10 @@ def tag2ts(ts_tag_sequence):
         elif pos == 'E':
             end = i
             
-            if end > begin > -1 and len(set(sentiments)) == 1:
-                ts_sequence.append((begin, end, sentiment))
+            if end > beg > -1 and len(set(sentiments)) == 1:
+                ts_sequence.append((beg, end, sentiment))
                 sentiments = []
-                begin, end = -1, -1
+                beg, end = -1, -1
                 
     return ts_sequence
 
